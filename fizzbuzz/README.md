@@ -1,4 +1,4 @@
-#FizzBuzz
+# FizzBuzz
 Fizz buzz is a classic programming problem, it is typically used to test developers to see if they undestand the basic concepts of writing code. 
 
 ## Prompt
