@@ -18,4 +18,13 @@
     :else n))
 
 (prn (map fizz-buzz? (range 1 101)))
+;; => (1 2 fizz 4 buzz fizz 7 8 fizz buzz ...)
 
+;;;; BONUS INFINITE SEQUENCE OF FIZZ BUZZ
+(defn infinite-fizz-buzz
+  "Returns an infinite sequence of fizzy buzzes starting from n"
+  [n]
+  (lazy-seq (map fizz-buzz? (range 1 (inc n)))))
+
+(prn (take 5 (infinite-fizz-buzz 6)))
+;; => (1 2 fizz 4 buzz)
